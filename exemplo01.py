@@ -134,6 +134,8 @@ def escrever_arquivo_copa_mundo():
      arquivo.write(texto_arquivo)
      print("Arquivo 'placar.csv' criado com sucessooooooooooo")
 
+     escrever_arquivo_copa_mundo()
+
 
 
 def exemplo_if():
