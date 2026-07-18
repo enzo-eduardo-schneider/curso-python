@@ -72,7 +72,7 @@ def exemplo_if_alunos():
         
 
 def exemplo_while():
-    i - 0
+    i = 0
     while i < 5:
         print(i)
         i += 1
@@ -83,7 +83,7 @@ def exemplo_while():
 
 
 def solicitador_dados():
-     i - 0
+     i = 0
      while i < 3:
           jogador = input("Nome do jogador")
           posicao = input("Posição do jogador")
@@ -102,7 +102,7 @@ def escrever_arquivo_copa_mundo():
      #criar arquivo CSV com os dados que o usuario digitar
      texto_arquivo = "Time1,Time2,Placar\n"
 
-     i - 0
+     i = 0
      while i < 3:
         time1: str = input("Time 1: ")
         time1_gols: int = int(input("Gols: " + time1 + ": "))
@@ -130,11 +130,11 @@ def escrever_arquivo_copa_mundo():
 
         i = i + 1;
 
-    with open("placar.csv", "w", encoding="utf-8") as arquivo:
-     arquivo.write(texto_arquivo)
-     print("Arquivo 'placar.csv' criado com sucessooooooooooo")
+        with open("placar.csv", "w", encoding="utf-8") as arquivo:
+            arquivo.write(texto_arquivo)
+            print("Arquivo 'placar.csv' criado com sucessooooooooooo")
 
-     escrever_arquivo_copa_mundo()
+        escrever_arquivo_copa_mundo()
 
 
 
