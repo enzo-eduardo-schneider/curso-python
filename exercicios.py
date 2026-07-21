@@ -361,3 +361,55 @@ def exemplo_personagem():
 
 
 exemplo_personagem()
+
+
+class Autor():
+    def __init__(self, nome: str, nacionalidade: str, ano_nascimento: int)
+        self.nome = nome
+        self.nacionalidade = nacionalidade
+        self.ano_nascimento = ano_nascimento
+
+    def dados(self):
+        print(f"Nome: {self.nome}", end = "\n" )
+        print(f"Nacionalidade: {self.nacionalidade}", end = "\n")
+        print(f"Ano de nascimento: {self.ano_nascimento}", end = "\n")
+
+def obter_descricao(self):
+    return f"{self.nome} - {self.nacionalidade}"
+
+class Livro():
+    def __init__(self, titulo: str, paginas: int, publicacao: int, autor, str)
+        self.titulo = titulo
+        self.paginas = paginas
+        self.publicacao = publicacao
+        self.autor = autor
+
+    def dados(self):
+        print(f"titulo; {self.titulo}")
+        print(f"paginas: {self.paginas}")
+        print(f"publicação: {self.publicacao}")
+        print(f"autor: {self.autor.obter_descricao()}")
+
+def exemplo_livro():
+
+    Pablo = Autor("Pablo", "Sueco", 1944)
+    Pablo.dados()
+    Veronica = Autor("Veronica", "italiana", 1999)
+    Veronica.dados()
+
+    Cafe_com_Deus_Pai = Livro("Café com Deus Pai", 424, 2022, Veronica)
+    Cafe_com_Deus_Pai.dados()
+    O_Pequeno_Principe = Livro("O Pequeno Príncipe", 96 , 1943 , Pablo)
+    O_Pequeno_Principe.dados()
+
+    print("Autor 1")
+    Pablo.dados()
+
+    print("Autor 2")
+    Veronica.dados()
+
+    print("Livro 1")
+    Cafe_com_Deus_Pai.dados()
+
+    print("Livro 2")
+    O_Pequeno_Principe.dados()
